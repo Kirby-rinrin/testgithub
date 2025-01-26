@@ -1,0 +1,6 @@
+こんちくには
+print("Hallo World!");
+重要語句
+①comit 変更した理由を残せるメモ帳のようなもの
+②push local PCに保存しているプログラムのデータをWebサイトにUpするもの
+③fetch origin　WebサイトのプログラムをPCに読み込むもの
