@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TestMazeGame.unity
+    guid: 7f7cbe4f832a7e94e9f78a3796bca293
+  - enabled: 1
+    path: Assets/Scenes/Second_MazeGame.unity
+    guid: f016859540b76fa4583d44c7a82e836b
   m_configObjects: {}

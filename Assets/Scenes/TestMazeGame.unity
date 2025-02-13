@@ -1253,11 +1253,11 @@ Transform:
   m_GameObject: {fileID: 924323153}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -12}
-  m_LocalScale: {x: 25, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: 2, z: -0.48}
+  m_LocalScale: {x: 1, y: 3, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1900915368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &924323155
 BoxCollider:
@@ -1793,11 +1793,11 @@ Transform:
   m_GameObject: {fileID: 1224530933}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 3, z: 25}
+  m_LocalPosition: {x: -0.48, y: 2, z: 0}
+  m_LocalScale: {x: 0.04, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1900915368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1224530935
 BoxCollider:
@@ -1969,11 +1969,11 @@ Transform:
   m_GameObject: {fileID: 1284510206}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 3, z: 25}
+  m_LocalPosition: {x: 0.48, y: 2, z: 0}
+  m_LocalScale: {x: 0.04, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1900915368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1398044245
 GameObject:
@@ -2254,9 +2254,10 @@ GameObject:
   - component: {fileID: 1412080027}
   - component: {fileID: 1412080026}
   - component: {fileID: 1412080030}
+  - component: {fileID: 1412080031}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: NextStage
+  m_TagString: Goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2374,6 +2375,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1412080031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412080025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04a4507d7a4c994f97808fa33958e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Warpworld: Second_MazeGame
 --- !u!1 &1435073797
 GameObject:
   m_ObjectHideFlags: 0
@@ -2906,11 +2920,11 @@ Transform:
   m_GameObject: {fileID: 1691459440}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 12}
-  m_LocalScale: {x: 25, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0.48}
+  m_LocalScale: {x: 1, y: 3, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1900915368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1691459442
 BoxCollider:
@@ -3606,7 +3620,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 25, y: 1, z: 25}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1284510210}
+  - {fileID: 1691459441}
+  - {fileID: 924323154}
+  - {fileID: 1224530934}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1946882729
@@ -3976,10 +3994,6 @@ SceneRoots:
   - {fileID: 1946882731}
   - {fileID: 1853630544}
   - {fileID: 1900915368}
-  - {fileID: 1284510210}
-  - {fileID: 1691459441}
-  - {fileID: 924323154}
-  - {fileID: 1224530934}
   - {fileID: 885079470}
   - {fileID: 708709563}
   - {fileID: 1485595475}
