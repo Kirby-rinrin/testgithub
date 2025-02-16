@@ -134,12 +134,10 @@ public class PlayerMoved : MonoBehaviour
         if (creativity)
         {
             Debug.Log("Now it's creativity!");
-            //Angelcircle.SetActive(true);
         }
         else
         {
             Debug.Log("Now it's not creativity!");
-            //Angelcircle.SetActive(false);
         }
     }
 }
