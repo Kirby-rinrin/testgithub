@@ -55,6 +55,13 @@ public class PlayerMoved : MonoBehaviour
                     rb.AddForce(Vector3.up * jumpPower);
                 }
             }
+            if (transform.position.y < 0)       //“Þ—Ž‘Îô
+            {
+                Debug.Log(startPosi);
+                transform.position = startPosi;
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
         }
         else
         {
@@ -99,13 +106,6 @@ public class PlayerMoved : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Rotate(new Vector3(0, RotateSpeed, 0));
-        }
-        if (transform.position.y < 0)       //“Þ—Ž‘Îô
-        {
-            Debug.Log(startPosi);
-            transform.position = startPosi;
-            rb.velocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
         }
     }
     void OnCollisionEnter(Collision collision)//››‚É“–‚½‚Á‚½‚Æ‚«
