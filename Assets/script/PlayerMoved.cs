@@ -107,6 +107,7 @@ public class PlayerMoved : MonoBehaviour
         {
             transform.Rotate(new Vector3(0, RotateSpeed, 0));
         }
+        Endgame();
     }
     void OnCollisionEnter(Collision collision)//ÅõÅõÇ…ìñÇΩÇ¡ÇΩÇ∆Ç´
     {
@@ -114,6 +115,10 @@ public class PlayerMoved : MonoBehaviour
         {
             SceneManager.LoadScene(collision.gameObject.GetComponent<Teleporter>().Warpworld);
             Debug.Log("To be continued...");
+        }
+        if(collision.gameObject.tag == "PerfectGoal")
+        {
+            Application.Quit();
         }
         if (collision.gameObject.tag == "Ground")
         {
@@ -138,6 +143,13 @@ public class PlayerMoved : MonoBehaviour
         else
         {
             Debug.Log("Now it's not creativity!");
+        }
+    }
+    void Endgame()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
         }
     }
 }

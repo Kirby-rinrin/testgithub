@@ -1699,13 +1699,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196066191}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03760297, y: 0, z: 0, w: 0.9992928}
-  m_LocalPosition: {x: 0, y: 1, z: -3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 342632365}
-  m_LocalEulerAnglesHint: {x: 4.31, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!81 &1196066193
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3518,6 +3518,7 @@ MonoBehaviour:
   player: {fileID: 1853630544}
   MoveSpeed: 3
   RotateSpeed: 2
+  jumpPower: 0
 --- !u!1 &1900915364
 GameObject:
   m_ObjectHideFlags: 0
