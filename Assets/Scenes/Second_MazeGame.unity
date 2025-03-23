@@ -6394,27 +6394,13 @@ GameObject:
   - component: {fileID: 1180963983}
   - component: {fileID: 1180963982}
   - component: {fileID: 1180963981}
-  - component: {fileID: 1180963980}
   m_Layer: 0
-  m_Name: NextStage
-  m_TagString: Goal
+  m_Name: PerfectGoal
+  m_TagString: PerfectGoal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1180963980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180963979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e04a4507d7a4c994f97808fa33958e6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Warpworld: Second_MazeGame
 --- !u!54 &1180963981
 Rigidbody:
   m_ObjectHideFlags: 0
